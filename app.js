@@ -5,7 +5,7 @@
    * Optional Formspree endpoint, e.g. "https://formspree.io/f/xxxxxx".
    * Leave empty to store signups in localStorage only.
    */
-  var FORM_ENDPOINT = "";
+  var FORM_ENDPOINT = "https://formspree.io/f/xoeqlbdg";
 
   var STORAGE_KEY = "bidhelper_waitlist";
 
@@ -105,6 +105,7 @@
       role: form.elements.namedItem("role").value,
       location: form.elements.namedItem("location").value.trim(),
       submittedAt: new Date().toISOString(),
+      _subject: "BidHelper waitlist signup",
     };
 
     var submitBtn = form.querySelector('[type="submit"]');
@@ -146,14 +147,7 @@
         finishSuccess("You're on the list. We'll be in touch when we launch near you.");
       })
       .catch(function () {
-        try {
-          saveLocal(payload);
-          finishSuccess(
-            "Saved locally. Remote submit failed — check FORM_ENDPOINT or try again later."
-          );
-        } catch (e) {
-          finishError("Something went wrong. Please try again.");
-        }
+        finishError("Couldn't send right now. Please try again in a minute.");
       });
   });
 })();
