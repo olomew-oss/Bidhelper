@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BidHelper | HVAC bids from local companies</title>
+  <meta name="description" content="Post your HVAC job with photos. Local companies bid. Coming soon at bidhelper.com." />
+  <meta property="og:title" content="BidHelper — Get real HVAC bids from local pros" />
+  <meta property="og:description" content="Homeowners post photos and job details. Local HVAC companies compete for the work." />
+  <meta property="og:url" content="https://bidhelper.com" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B3D5C'/%3E%3Cpath d='M18 40c6-14 22-14 28 0' stroke='%23F0A500' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='32' cy='28' r='6' fill='%23F0A500'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="/">BidHelper</a>
+      <nav aria-label="Primary">
+        <a href="#how">How it works</a>
+        <a href="#who">Who it's for</a>
+        <a class="btn btn-sm" href="#waitlist">Get updates</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">Residential HVAC · Launching soon</p>
+          <h1>BidHelper — Get real HVAC bids from local pros</h1>
+          <p class="lede">Homeowners post photos and job details. Local HVAC companies compete for the work. Clearer quotes. Less guesswork.</p>
+          <p class="hero-body">Tired of vague "AC broken" calls and quotes that don't match? BidHelper is a reverse-auction style marketplace for residential HVAC — repair or replace. You document the job once; licensed local companies bid on the same facts.</p>
+          <div class="hero-cta">
+            <a class="btn" href="#waitlist">Notify me at launch</a>
+            <a class="text-link" href="#how">See how it works</a>
+          </div>
+        </div>
+        <aside class="hero-card" aria-label="How BidHelper works summary">
+          <h2>One job. Many bids.</h2>
+          <ol>
+            <li><strong>Post</strong> photos, nameplates, and what's wrong</li>
+            <li><strong>Bid</strong> — local HVAC companies compete</li>
+            <li><strong>Choose</strong> on scope, timeline, and price</li>
+          </ol>
+          <p class="card-note">Built by people with decades in the HVAC trade.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="how" class="section">
+      <div class="wrap">
+        <h2>How it works</h2>
+        <div class="steps">
+          <article>
+            <span class="step-num">1</span>
+            <h3>Post</h3>
+            <p>Upload photos, nameplates, and a plain-English description of the problem — the same package every bidder sees.</p>
+          </article>
+          <article>
+            <span class="step-num">2</span>
+            <h3>Bid</h3>
+            <p>Local HVAC companies in your area compete for the job based on the real system, not a driveway guess.</p>
+          </article>
+          <article>
+            <span class="step-num">3</span>
+            <h3>Choose</h3>
+            <p>Compare scope, timeline, and price side by side. Vet license and insurance like you always should.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="who" class="section section-alt">
+      <div class="wrap two-col">
+        <article>
+          <h2>For homeowners</h2>
+          <p>Get apples-to-apples bids without repeating your story five times. Bring photos and details that help honest techs price the real job.</p>
+          <ul>
+            <li>One write-up for every bidder</li>
+            <li>Fewer vague callbacks and change orders</li>
+            <li>Clearer repair vs replace decisions</li>
+          </ul>
+        </article>
+        <article>
+          <h2>For HVAC companies</h2>
+          <p>See the system before you drive. Bid jobs that fit your radius and specialties — less tire-kicking, more qualified work.</p>
+          <ul>
+            <li>Photos and nameplates up front</li>
+            <li>Jobs matched to your service area</li>
+            <li>Compete on clarity, not guesswork</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="waitlist" class="section waitlist">
+      <div class="wrap waitlist-inner">
+        <div>
+          <h2>Launching soon in select markets</h2>
+          <p>Join the list and we'll notify you when BidHelper opens near you. Homeowners and contractors welcome.</p>
+        </div>
+        <form id="waitlist-form" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+          </div>
+          <div class="field">
+            <label for="role">I am a…</label>
+            <select id="role" name="role" required>
+              <option value="">Select one</option>
+              <option value="homeowner">Homeowner</option>
+              <option value="contractor">HVAC company / tech</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="location">City or ZIP</label>
+            <input id="location" name="location" type="text" autocomplete="postal-code" placeholder="e.g. 75201 or Dallas, TX" required />
+          </div>
+          <button class="btn btn-block" type="submit">Notify me</button>
+          <p class="form-hint">We'll only use this for launch updates. No spam.</p>
+          <p id="form-status" class="form-status" role="status" aria-live="polite" hidden></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© 2026 BidHelper · <a href="https://bidhelper.com">bidhelper.com</a> · Built by people who've been in the HVAC trade for decades.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
